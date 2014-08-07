@@ -1,6 +1,6 @@
 ## This code generates a figure with four charts providing a snapshot of energy used by a single 
 ## household sampled in one-minute intervals between February 1, 2007 and February 2, 2007.  The 
-## original dataset is downloaded from the UCI Machine Learning Repository.
+## original dataset is downloaded from the UCI Machine Learning Repository. 
 
 ## Download data from UCI Machine Learning Respository, store as object called 'data'.
 fileURL <- "http://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"

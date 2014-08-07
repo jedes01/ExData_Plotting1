@@ -1,6 +1,6 @@
 ## This code generates a line graph of the "Global Active Power" used by a single household
 ## sampled in one-minute intervals between February 1, 2007 and February 2, 2007.  The original
-## dataset is downloaded from the UCI Machine Learning Repository.
+## dataset is downloaded from the UCI Machine Learning Repository. 
 
 library(data.table)
 

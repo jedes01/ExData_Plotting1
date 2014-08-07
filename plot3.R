@@ -1,7 +1,7 @@
 ## This code generates a line graph comparing energy (in watt-hours) used by (1) the kitchen, (2)
 ## the laundry room, and (3) an electric water heater and air conditioner in a single room sampled
 ## in one-minute intervals between February 1, 2007 and February 2, 2007.  The original dataset
-## is downloaded from the UCI Machine Learning Repository.
+## is downloaded from the UCI Machine Learning Repository. 
 
 library(data.table)
 

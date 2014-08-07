@@ -1,6 +1,6 @@
 ## This code generates a histogram of the "Global Active Power" used by a single household
 ## sampled in one-minute intervals between February 1, 2007 and February 2, 2007.  The original
-## dataset is downloaded from the UCI Machine Learning Repository.
+## dataset is downloaded from the UCI Machine Learning Repository. 
 
 library(data.table)
 
@@ -8,7 +8,7 @@ library(data.table)
 fileURL <- "http://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
 temp <- tempfile()
 download.file(fileURL, temp)
-data <- fread(unzip(temp, "household_power_consumption.txt"), sep=";", na.strings="?", header="T")
+data <- fread(unzip(temp, "household_power_consumption.txt"), sep=";", na.strings="?", header=T)
 unlink(temp)
 
 ## Subset data, assign variables to appropriate classes.
@@ -18,7 +18,7 @@ subData$DateTime <- as.POSIXct(subData$DateTime, format="%d/%m/%Y %H:%M:%S")
 subData$Global_active_power <- as.numeric(subData$Global_active_power)
 
 ## Generate plot, store in "plot1.png" in the working directory.
-png("plot1.png", width=480, height=480)
+png("plot1.png", width=481, height=480)
 with(subData,hist(Global_active_power,main="Global Active Power", 
                   xlab="Global Active Power (kilowatts)", ylab="Frequency",
                   col="Red", yaxt="n"), xpd=NA)
